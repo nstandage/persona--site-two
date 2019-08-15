@@ -1,0 +1,240 @@
+$primary-color: #394661;
+$secondary-color: #69738a;
+// $primary-color: #956ea1;
+// $secondary-color: #dbd7b4;
+
+$accent-color: #ffa2a2;
+
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: $secondary-color;
+  background-position: center no-repeat;
+  background-size: cover;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+svg {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: -2;
+}
+
+.circle {
+  margin: 0px;
+  padding: 0px;
+  cx: 320;
+  cy: 750;
+  r: 375;
+  stroke: none;
+  stroke-width: 3;
+  fill: $primary-color;
+  z-index: -2;
+}
+
+.logo {
+  position: absolute;
+  margin: 4px;
+  padding-left: 18px;
+  top: 0px;
+  left: 0px;
+  // border: 1px solid red;
+
+  h1 {
+    color: $accent-color;
+    font-size: 64px;
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica Neue bold;
+  }
+}
+
+.contactContainer {
+  position: absolute;
+  transform: rotate(-90deg);
+  bottom: 80px;
+  right: -70px;
+  padding: 0px;
+  margin: 0;
+  a {
+    text-decoration: none;
+    font-family: Helvetica Neue Medium;
+    font-size: 50px;
+    color: $accent-color;
+  }
+}
+
+.visitContainer {
+  position: absolute;
+  bottom: 14px;
+  left: 26px;
+  padding: 0px;
+  margin: 0px;
+  a {
+    text-decoration: none;
+    font-family: Helvetica Neue Medium;
+    font-size: 34px;
+    color: $accent-color;
+  }
+}
+
+.menu {
+  // border: 1px solid black;
+  display: flex;
+  position: absolute;
+  top: 12vh;
+  right: 14vw;
+  margin: 0px;
+  padding: 0px;
+
+  .dropdown {
+    // border: 1px solid lightseagreen;
+    display: none;
+    position: absolute;
+    padding: 0px;
+    z-index: 3;
+    margin: 32px 0px 0px 0px;
+    align-items: center;
+    flex-direction: column;
+    min-width: 11em;
+    padding: 3px 0px 0px 0px;
+
+    a {
+      // border: 2px solid blue;
+      width: 100%;
+      color: $accent-color;
+      font-family: Helvetica Neue Medium;
+      font-size: 20px;
+      margin: 0px;
+      padding: 12px;
+      text-decoration: none;
+      display: block;
+      display: flex;
+      justify-content: center;
+    }
+
+    a:hover {
+      color: $primary-color;
+      // border: 2px solid white;
+    }
+  }
+
+  .bracketIcon {
+    margin: 0px 8vw 0px 0px;
+    // border: 1px solid red;
+  }
+
+  .musicNoteIcon {
+    // border: 1px solid red;
+    margin: 0px 0px 0px 8vw;
+    padding: 0px;
+  }
+}
+
+.menuIcon {
+  // border: 1px solid red;
+  padding: 0px;
+  //New
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+  img {
+    height: 30px;
+  }
+}
+
+.bracketIcon:hover > .bracketDropdown {
+  display: flex !important;
+  // border: 1px solid green;
+}
+
+.musicNoteIcon:hover > .musicNoteDropdown {
+  display: flex !important;
+  // border: 1px solid red;
+}
+
+.infoContainer {
+  position: absolute;
+  // top: 12em;
+  top: 28vh;
+  // left: 13em;
+  left: 14vw;
+  // max-width: 45em;
+  max-width: 60vw;
+  margin: 0px;
+  padding: 0px;
+
+  h2 {
+    color: $accent-color;
+    font-family: Helvetica Neue Medium;
+    font-size: 58px;
+    margin: 18px;
+  }
+
+  p {
+    color: $accent-color;
+    font-family: Helvetica Neue Light;
+    font-size: 22px;
+    margin: 0em 0em 0em 2em;
+  }
+}
+
+/* -------------- Fonts --------------- */
+
+@font-face {
+  font-family: "Helvetica Neue Heavy";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Heavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeueBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Ultra Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeueUltraLight.woff") format("woff");
+}

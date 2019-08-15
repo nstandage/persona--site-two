@@ -1,0 +1,242 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #69738a;
+  background-position: center no-repeat;
+  background-size: cover;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+svg {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: -2;
+}
+
+.circle {
+  margin: 0px;
+  padding: 0px;
+  cx: 320;
+  cy: 750;
+  r: 375;
+  stroke: none;
+  stroke-width: 3;
+  fill: #394661;
+  z-index: -2;
+}
+
+.logo {
+  position: absolute;
+  margin: 4px;
+  padding-left: 18px;
+  top: 0px;
+  left: 0px;
+}
+
+.logo h1 {
+  color: #ffa2a2;
+  font-size: 64px;
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica Neue bold;
+}
+
+.contactContainer {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  bottom: 80px;
+  right: -70px;
+  padding: 0px;
+  margin: 0;
+}
+
+.contactContainer a {
+  text-decoration: none;
+  font-family: Helvetica Neue Medium;
+  font-size: 50px;
+  color: #ffa2a2;
+}
+
+.visitContainer {
+  position: absolute;
+  bottom: 14px;
+  left: 26px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.visitContainer a {
+  text-decoration: none;
+  font-family: Helvetica Neue Medium;
+  font-size: 34px;
+  color: #ffa2a2;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 12vh;
+  right: 14vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+.menu .dropdown {
+  display: none;
+  position: absolute;
+  padding: 0px;
+  z-index: 3;
+  margin: 32px 0px 0px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 11em;
+  padding: 3px 0px 0px 0px;
+}
+
+.menu .dropdown a {
+  width: 100%;
+  color: #ffa2a2;
+  font-family: Helvetica Neue Medium;
+  font-size: 20px;
+  margin: 0px;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .dropdown a:hover {
+  color: #394661;
+}
+
+.menu .bracketIcon {
+  margin: 0px 8vw 0px 0px;
+}
+
+.menu .musicNoteIcon {
+  margin: 0px 0px 0px 8vw;
+  padding: 0px;
+}
+
+.menuIcon {
+  padding: 0px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.menuIcon img {
+  height: 30px;
+}
+
+.bracketIcon:hover > .bracketDropdown {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.musicNoteIcon:hover > .musicNoteDropdown {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.infoContainer {
+  position: absolute;
+  top: 28vh;
+  left: 14vw;
+  max-width: 60vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+.infoContainer h2 {
+  color: #ffa2a2;
+  font-family: Helvetica Neue Medium;
+  font-size: 58px;
+  margin: 18px;
+}
+
+.infoContainer p {
+  color: #ffa2a2;
+  font-family: Helvetica Neue Light;
+  font-size: 22px;
+  margin: 0em 0em 0em 2em;
+}
+
+/* -------------- Fonts --------------- */
+@font-face {
+  font-family: "Helvetica Neue Heavy";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Heavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeueBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Ultra Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeueUltraLight.woff") format("woff");
+}
+/*# sourceMappingURL=style.css.map */
