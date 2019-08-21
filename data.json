@@ -1,14 +1,27 @@
-{
-  "projects": [
-    {
-      "title": "Penny Wise",
-      "text": "Penny Wise is an iOS app that allows food service workers to keep track of their tips and hours works.",
-      "lineLength": 1
-    },
-    { "title": "Fat Cats", "text": "", "lineLength": 1 },
-    { "title:": "Test Prep Tech", "text": "", "lineLength": 1 },
-    { "title:": "Brother.", "text": "", "lineLength": 1 },
-    { "title:": "Roadie", "text": "", "lineLength": 1 },
-    { "title:": "Personal Productions", "text": "", "lineLength": 1 }
-  ]
-}
+[
+
+    		{
+    			"title": "Penny Wise",
+    			"body": "Penny Wise is an iOS app that allows food service workers to keep track of their tips and hours works."
+    		},
+    		{
+    			"title": "Fat Cats",
+    			"body": "fat cats body"
+    		},
+    		{
+    			"title:": "Test Prep Tech",
+    			"body": "test prep tech body"
+    		},
+    		{
+    			"title:": "Brother.",
+    			"text": ""
+    		},
+    		{
+    			"title:": "Roadie",
+    			"body": "roadie body"
+    		},
+    		{
+    			"title:": "Personal",
+    			"text": "personal body"
+    		}
+    	]
