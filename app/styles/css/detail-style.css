@@ -46,7 +46,6 @@ body {
 
 .page {
   width: 100vw;
-  height: 200vh;
   padding: 0px;
   margin: 0px;
   position: absolute;
@@ -134,6 +133,14 @@ body {
       color: #3889e8; }
     .menu .dropdown .hoverColorTestPrep:hover {
       color: #bc5753; }
+    .menu .dropdown .hoverColorFatCats:hover {
+      color: #4390c1; }
+    .menu .dropdown .hoverColorBrother:hover {
+      color: #525252; }
+    .menu .dropdown .hoverColorPersonal:hover {
+      color: #6c2ba1; }
+    .menu .dropdown .hoverColorRoadie:hover {
+      color: #721d43; }
   .menu .bracketIcon {
     padding: 0px 14px 4px 14px;
     margin: 0px 7vw 0px 0px; }
@@ -286,3 +293,14 @@ footer {
   background-color: black; }
   .darkFooter p {
     color: white; }
+
+.contentContainerSimple {
+  margin: 6em 0em 0em 0em;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contentContainerSimple img {
+    margin: 0em 1.2em; }
+  .contentContainerSimple .contentSectionSimple {
+    margin-right: 4em; }

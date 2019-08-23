@@ -3,9 +3,9 @@
 $primary-color: #000;
 $accent-color-penny-wise: rgb(56, 137, 232);
 $accent-color-test-prep: rgb(188, 87, 83);
-$accent-color-fat-fats: rgb(67, 144, 193);
+$accent-color-fat-cats: rgb(67, 144, 193);
 
-$accent-color-roadie: rgb(90, 36, 60);
+$accent-color-roadie: rgb(114, 29, 67);
 $accent-color-brother: rgb(82, 82, 82);
 $accent-color-personal: rgb(108, 43, 161);
 
@@ -21,7 +21,6 @@ body {
 
 .page {
   width: 100vw;
-  height: 200vh;
   padding: 0px;
   margin: 0px;
   position: absolute;
@@ -138,6 +137,22 @@ body {
 
     .hoverColorTestPrep:hover {
       color: $accent-color-test-prep;
+    }
+
+    .hoverColorFatCats:hover {
+      color: $accent-color-fat-cats;
+    }
+
+    .hoverColorBrother:hover {
+      color: $accent-color-brother;
+    }
+
+    .hoverColorPersonal:hover {
+      color: $accent-color-personal;
+    }
+
+    .hoverColorRoadie:hover {
+      color: $accent-color-roadie;
     }
   }
 
@@ -350,5 +365,22 @@ footer {
 
   p {
     color: white;
+  }
+}
+
+.contentContainerSimple {
+  margin: 6em 0em 0em 0em;
+  padding: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin: 0em 1.2em;
+  }
+
+  .contentSectionSimple {
+    margin-right: 4em;
   }
 }

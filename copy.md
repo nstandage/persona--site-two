@@ -77,10 +77,9 @@ Test Prep Tech's latest release SAT Math Wizard requires various types of math e
 
 
 **Tech Used:**
-HTML
+HTMLx
 CSS
 JavaScript
 ExpressJS
-
 
 Fat Cats wanted a super simple landing page for their grand opening. It would allow users to enter their info and then redirect them to an external site to see pictures taken at their events. I created a CSV file to store customer's info that they could download.

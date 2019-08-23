@@ -19,7 +19,7 @@ function watch() {
   browserSync.init({
     server: {
       baseDir: "app/"
-      // index: "test-prep.html"
+      // index: "contact.html"
     }
   });
   gulp.watch("./app/styles/scss/**/*.scss", style);

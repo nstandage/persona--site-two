@@ -25,3 +25,13 @@ var logoScene = new ScrollMagic.Scene({
 })
   .setClassToggle(".logo", "darkLogo")
   .addTo(controller);
+
+function contactButton() {
+  console.log("click");
+  // document.getElementById("contactFormContainer").style.display = "flex";
+
+  let form = document.getElementById("contactForm");
+
+  form.style.display = "block";
+  console.log(typeof form);
+}
