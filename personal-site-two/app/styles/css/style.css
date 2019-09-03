@@ -38,16 +38,17 @@
 body {
   padding: 0px;
   margin: 0px;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
   position: absolute;
   background-color: #69738a;
   background-position: center no-repeat;
   background-size: cover; }
 
 .page {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 0px;
   margin: 0px;
   position: absolute;
@@ -64,9 +65,6 @@ svg {
 .circle {
   margin: 0px;
   padding: 0px;
-  cx: 320;
-  cy: 750;
-  r: 375;
   stroke: none;
   stroke-width: 3;
   fill: #394661;

@@ -1,0 +1,111 @@
+.content-container {
+  margin: 2em;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  align-items: center;
+  border: 1px solid blue; }
+
+.container-title-compartment {
+  margin: 2em 12vw;
+  position: relative; }
+
+.container-title {
+  font-family: Helvetica Neue Bold;
+  font-size: 54px;
+  width: auto;
+  height: auto;
+  margin: 1em 2em 0.2em 0.5em; }
+
+.container-title-underline {
+  border: 1px solid black; }
+
+.container-body-compartment {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; }
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  align-items: center;
+  width: auto;
+  position: relative; }
+
+.section-title-compartment {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.section-title {
+  text-align: center;
+  font-family: 42px;
+  font-family: Helvetica Neue Bold; }
+
+.section-body-compartment {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  position: relative;
+  border: 3px solid black; }
+
+.content-subsection {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 4em;
+  padding: 0px;
+  align-items: center;
+  border: 1px solid pink;
+  min-width: 20%;
+  justify-content: center; }
+
+.right {
+  margin-right: 12vw; }
+
+.left {
+  margin-left: 12vw; }
+
+.subsection-title-compartment {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: 1px solid red; }
+
+.subsection-title {
+  text-align: center;
+  border: 1px solid darkGreen;
+  font-size: 46px;
+  font-family: Helvetica Neue Bold; }
+
+.subsection-body-compartment {
+  margin: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid green; }
+
+.subsection-body-content {
+  width: auto; }
+
+.body-text-small {
+  font-family: Helvetica Neue Medium;
+  font-size: 20px; }
+
+.body-text-medium {
+  font-family: Helvetica Neue Medium;
+  font-size: 24px; }
+
+.body-text-large {
+  font-family: Helvetica Neue Medium;
+  font-size: 32px; }
