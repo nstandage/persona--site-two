@@ -1,0 +1,70 @@
+@import "fonts";
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.contactFormContainer {
+  margin: 1em 4em 3em 4em;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-content: center;
+  z-index: 100;
+  border: 3px solid purple;
+}
+
+.contactForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1em 2em 3em 2em;
+  padding: 1em;
+  margin: 0em;
+  padding: 0em;
+  background-color: white;
+  transition: 1s;
+  //   border: 1px solid red;
+}
+
+.contactInput {
+  margin: 0.3em;
+  padding: 0.6em;
+
+  max-width: 40em;
+  font-size: 1em;
+  font-family: Helvetica Neue Medium;
+  font-weight: 100;
+  border: 2px solid lightgrey;
+}
+
+.contactBody {
+  max-width: 40em;
+  margin: 0.3em;
+  padding: 0.6em;
+  font-size: 1em;
+  font-family: Helvetica Neue Medium;
+  font-weight: 100;
+  border: 2px solid lightgrey;
+}
+
+form {
+  font-family: Helvetica Neue Medium;
+  font-size: 1.05em;
+  max-width: 50em;
+  width: 40em;
+}
+
+.submitButton {
+  font-family: Helvetica Neue Medium;
+  font-size: 1em;
+  height: 3em;
+  width: 7em;
+  min-width: auto;
+  background-color: black;
+  border-radius: 1.5em;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

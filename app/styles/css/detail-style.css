@@ -1,0 +1,307 @@
+/* -------------- Fonts --------------- */
+@font-face {
+  font-family: "Helvetica Neue Heavy";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Heavy.woff") format("woff"); }
+
+@font-face {
+  font-family: "Helvetica Neue Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: "Helvetica Neue Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "Helvetica Neue Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Thin.woff") format("woff"); }
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeueBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Helvetica Neue Ultra Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeueUltraLight.woff") format("woff"); }
+
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: absolute;
+  background-position: center no-repeat;
+  background-size: cover; }
+
+.page {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  box-sizing: border-box; }
+
+.logo {
+  position: fixed;
+  margin: 4px;
+  padding-left: 18px;
+  top: 0px;
+  left: 0px; }
+  .logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 64px;
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica Neue bold; }
+
+.darkLogo a {
+  color: white; }
+
+.contactContainer {
+  position: fixed;
+  transform: rotate(-90deg);
+  bottom: 80px;
+  right: -70px;
+  padding: 0px;
+  margin: 0;
+  z-index: 3; }
+  .contactContainer a {
+    text-decoration: none;
+    font-family: Helvetica Neue Medium;
+    font-size: 50px;
+    color: #000;
+    bottom: 0px;
+    right: 0px; }
+
+.contactContainerDark a {
+  color: white; }
+
+.darkMenu .bracketButton img {
+  content: url("../../images/brackets-white.png"); }
+
+.darkMenu .musicNoteButton img {
+  content: url("../../images/music-note-white.png"); }
+
+.darkMenu .dropdown .link {
+  color: white; }
+
+.darkMenu .dropdown .link:hover {
+  color: #3889e8; }
+
+.menu {
+  display: flex;
+  position: fixed;
+  top: 10vh;
+  right: 14vw;
+  margin: 0px;
+  padding: 0px;
+  z-index: 10; }
+  .menu .dropdown {
+    display: none;
+    position: absolute;
+    padding: 0px;
+    z-index: 3;
+    margin: 38px 0px 0px 0px;
+    align-items: center;
+    flex-direction: column;
+    min-width: 11em;
+    padding: 3px 0px 0px 0px;
+    z-index: 10; }
+    .menu .dropdown a {
+      width: 100%;
+      color: #000;
+      font-family: Helvetica Neue Medium;
+      font-size: 20px;
+      margin: 0px;
+      padding: 12px;
+      text-decoration: none;
+      display: block;
+      display: flex;
+      justify-content: center; }
+    .menu .dropdown .hoverColorPennyWise:hover {
+      color: #3889e8; }
+    .menu .dropdown .hoverColorTestPrep:hover {
+      color: #bc5753; }
+    .menu .dropdown .hoverColorFatCats:hover {
+      color: #4390c1; }
+    .menu .dropdown .hoverColorBrother:hover {
+      color: #525252; }
+    .menu .dropdown .hoverColorPersonal:hover {
+      color: #6c2ba1; }
+    .menu .dropdown .hoverColorRoadie:hover {
+      color: #721d43; }
+  .menu .bracketIcon {
+    padding: 0px 14px 4px 14px;
+    margin: 0px 7vw 0px 0px; }
+  .menu .musicNoteIcon {
+    margin: 0px 0px 0px 7vw;
+    padding: 0px 14px 4px 14px; }
+
+.menuIcon {
+  padding: 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer; }
+  .menuIcon img {
+    height: 30px; }
+
+.bracketIcon:hover > .bracketDropdown {
+  display: flex !important; }
+
+.musicNoteIcon:hover > .musicNoteDropdown {
+  display: flex !important; }
+
+.title {
+  padding: 0px;
+  margin: 20em 12vw 1em 3em; }
+  .title h1 {
+    font-family: Helvetica Neue Bold;
+    font-size: 60px;
+    color: #000;
+    margin: 1em 0em 0.2em 0.5em; }
+  .title hr {
+    border: 1px solid #000; }
+
+.subtitle {
+  padding: 0px;
+  margin: 14em 12vw 2em 3em; }
+  .subtitle h1 {
+    font-family: Helvetica Neue Bold;
+    font-size: 54px;
+    color: #000;
+    margin: 1em 2em 0.2em 0.5em; }
+  .subtitle hr {
+    border: 1px solid #000; }
+
+.headline {
+  padding: 0px;
+  margin: 4em 12vw 2em 3em; }
+  .headline h1 {
+    font-family: Helvetica Neue Medium;
+    font-size: 28px;
+    color: #000;
+    margin: 1em 8em 0em 2em; }
+
+.contentContainer {
+  margin: 2em;
+  display: flex;
+  flex-direction: column; }
+
+.contentSection {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  width: auto; }
+
+.imgRight {
+  width: 240px;
+  margin: 2em;
+  margin-right: 10em; }
+
+.imgLeft {
+  width: 240px;
+  margin: 2em;
+  margin-left: 10em; }
+
+.contentImage {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 7em; }
+
+.contentTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.contentTitle {
+  margin: 0em 0em 2em 0em;
+  font-family: Helvetica Neue Bold;
+  font-size: 46px; }
+
+.contentBody {
+  margin: 0em 5em 8em 5em;
+  font-family: Helvetica Neue Medium;
+  font-size: 26px; }
+
+.appStoreContainer {
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+  .appStoreContainer .appIcon {
+    width: 120px; }
+  .appStoreContainer a img {
+    width: 140px;
+    margin: 2em 0em 0em 0em; }
+
+.creationContainer {
+  margin: 0em 14em;
+  padding: 0em; }
+  .creationContainer h1 {
+    font-family: Helvetica Neue Bold;
+    font-size: 34px;
+    color: white; }
+  .creationContainer p {
+    font-family: Helvetica Neue Light;
+    font-size: 20px;
+    color: white; }
+
+.dark {
+  margin: 2em 0em 0em 0em;
+  padding: 0.3em 0px;
+  background-color: black; }
+  .dark .subtitle {
+    margin: 1.2em 12vw 2em 3em; }
+    .dark .subtitle h1 {
+      color: white;
+      padding: 0px; }
+    .dark .subtitle hr {
+      border: 1px solid white;
+      padding: 0px; }
+
+footer {
+  height: 10em;
+  position: relative;
+  margin: 0em; }
+  footer p {
+    position: absolute;
+    margin: 1em 2.5em;
+    bottom: 12px;
+    font-family: Helvetica Neue Light;
+    font-size: 16px; }
+
+.lightFooter {
+  background-color: white; }
+  .lightFooter p {
+    color: black; }
+
+.darkFooter {
+  background-color: black; }
+  .darkFooter p {
+    color: white; }
+
+.contentContainerSimple {
+  margin: 6em 0em 0em 0em;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contentContainerSimple img {
+    margin: 0em 1.2em; }
+  .contentContainerSimple .contentSectionSimple {
+    margin-right: 4em; }

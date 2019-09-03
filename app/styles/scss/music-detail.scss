@@ -1,0 +1,421 @@
+@import "fonts";
+
+$primary-color: #000;
+$accent-color-penny-wise: rgb(56, 137, 232);
+$accent-color-test-prep: rgb(188, 87, 83);
+$accent-color-fat-cats: rgb(67, 144, 193);
+
+$accent-color-roadie: rgb(114, 29, 67);
+$accent-color-brother: rgb(82, 82, 82);
+$accent-color-personal: rgb(108, 43, 161);
+
+body {
+  padding: 0px;
+  margin: 0px;
+  max-width: 100%;
+  overflow-x: hidden;
+  height: auto;
+  position: relative;
+  background-position: center no-repeat;
+  background-size: cover;
+}
+
+.page {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  position:relative;
+  box-sizing: border-box;
+}
+
+.logo {
+  position: fixed;
+  margin: 4px;
+  padding-left: 18px;
+  top: 0px;
+  left: 0px;
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 64px;
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica Neue bold;
+  }
+}
+
+.darkLogo {
+  a {
+    color: white;
+  }
+}
+
+.contactContainer {
+  position: fixed;
+  transform: rotate(-90deg);
+  bottom: 80px;
+  right: -70px;
+  padding: 0px;
+  margin: 0;
+  z-index: 3;
+  a {
+    text-decoration: none;
+    font-family: Helvetica Neue Medium;
+    font-size: 50px;
+    color: $primary-color;
+    bottom: 0px;
+    right: 0px;
+  }
+}
+
+.contactContainerDark {
+  a {
+    color: white;
+  }
+}
+
+.darkMenu {
+  .bracketButton {
+    img {
+      content: url("../../images/brackets-white.png");
+    }
+  }
+  .musicNoteButton {
+    img {
+      content: url("../../images/music-note-white.png");
+    }
+  }
+
+  .dropdown {
+    .link {
+      color: white;
+    }
+
+    .link:hover {
+      color: $accent-color-penny-wise;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  top: 10vh;
+  right: 14vw;
+  margin: 0px;
+  padding: 0px;
+  z-index: 10;
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    padding: 0px;
+    z-index: 3;
+    margin: 38px 0px 0px 0px;
+    align-items: center;
+    flex-direction: column;
+    min-width: 11em;
+    padding: 3px 0px 0px 0px;
+    z-index: 10;
+
+    a {
+      width: 100%;
+      color: $primary-color;
+      font-family: Helvetica Neue Medium;
+      font-size: 20px;
+      margin: 0px;
+      padding: 12px;
+      text-decoration: none;
+      display: block;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hoverColorPennyWise:hover {
+      color: $accent-color-penny-wise;
+    }
+
+    .hoverColorTestPrep:hover {
+      color: $accent-color-test-prep;
+    }
+
+    .hoverColorFatCats:hover {
+      color: $accent-color-fat-cats;
+    }
+
+    .hoverColorBrother:hover {
+      color: $accent-color-brother;
+    }
+
+    .hoverColorPersonal:hover {
+      color: $accent-color-personal;
+    }
+
+    .hoverColorRoadie:hover {
+      color: $accent-color-roadie;
+    }
+  }
+
+  .bracketIcon {
+    padding: 0px 14px 4px 14px;
+    margin: 0px 7vw 0px 0px;
+  }
+
+  .musicNoteIcon {
+    margin: 0px 0px 0px 7vw;
+    padding: 0px 14px 4px 14px;
+  }
+}
+
+.menuIcon {
+  padding: 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+
+  cursor: pointer;
+  img {
+    height: 30px;
+  }
+}
+
+.bracketIcon:hover > .bracketDropdown {
+  display: flex !important;
+}
+
+.musicNoteIcon:hover > .musicNoteDropdown {
+  display: flex !important;
+}
+
+.title {
+  padding: 0px;
+  margin: 20em 12vw 1em 3em;
+  h1 {
+    font-family: Helvetica Neue Bold;
+    font-size: 60px;
+    color: $primary-color;
+    margin: 1em 0em 0.2em 0.5em;
+  }
+
+  hr {
+    border: 1px solid $primary-color;
+  }
+}
+
+.subtitle {
+  padding: 0px;
+  // text-align: right;
+  margin: 14em 12vw 2em 3em;
+  h1 {
+    font-family: Helvetica Neue Bold;
+    font-size: 54px;
+    color: $primary-color;
+    margin: 1em 2em 0.2em 0.5em;
+  }
+
+  hr {
+    border: 1px solid $primary-color;
+  }
+}
+
+.headline {
+  padding: 0px;
+  margin: 4em 12vw 2em 3em;
+
+  h1 {
+    font-family: Helvetica Neue Medium;
+    font-size: 28px;
+    color: $primary-color;
+    margin: 1em 8em 0em 2em;
+  }
+}
+
+.contentContainer {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentSection {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  margin: 2em;
+  width: auto;
+}
+
+.imgRight {
+  width: 240px;
+  margin: 2em;
+  margin-right: 10em;
+}
+
+.imgLeft {
+  width: 240px;
+  margin: 2em;
+  margin-left: 10em;
+}
+
+.contentImage {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 7em;
+}
+
+.creationContainer {
+  margin: 0em 14em;
+  padding: 0em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-family: Helvetica Neue Bold;
+    font-size: 34px;
+    color: white;
+  }
+
+  p {
+    font-family: Helvetica Neue Light;
+    font-size: 16px;
+    color: white;
+    padding: 2px;
+    margin: 0px;
+  }
+
+
+  img {
+	width: 80%;
+	margin: 8px 0px 60px 0px;
+  }
+
+}
+
+.dark {
+  margin: 2em 0em 0em 0em;
+
+  padding: 0.3em 0px;
+  background-color: black;
+
+  .subtitle {
+    margin: 1.2em 12vw 2em 3em;
+    // margin: 1em 12vw 1em 10em;
+    h1 {
+      color: white;
+      padding: 0px;
+    }
+    hr {
+      border: 1px solid white;
+      padding: 0px;
+    }
+  }
+}
+
+footer {
+  height: 10em;
+  position: relative;
+  margin: 0em;
+
+  p {
+    position: absolute;
+    margin: 1em 2.5em;
+    bottom: 12px;
+    font-family: Helvetica Neue Light;
+    font-size: 16px;
+  }
+}
+
+.lightFooter {
+  background-color: white;
+
+  p {
+    color: black;
+  }
+}
+
+.darkFooter {
+  background-color: black;
+
+  p {
+    color: white;
+  }
+}
+
+.bioPics {
+
+	padding: 12px;
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+	img {
+		margin: 0px 12px;
+		max-height: 300px;
+		height: auto;
+		border: 3px solid black;
+	}
+}.musicTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentTitle {
+  // align-self: flex-start;
+  margin: 0em 0em 2em 0em;
+  font-family: Helvetica Neue Bold;
+  font-size: 46px;
+}
+
+.contentBody {
+  margin: 0em 5em 8em 5em;
+  font-family: Helvetica Neue Medium;
+  font-size: 26px;
+
+}
+
+.contentAudioSection {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	justify-content: center;
+	padding-top: 2em;
+	margin-bottom: 9em;
+	
+}
+
+.contentAudioPlayerContainer {
+
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	padding-right: 15%;
+
+}
+.contentAudioTextContainer {
+
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	padding-left: 15%;
+}
+
+
+  ul {	
+	li {
+		font-family: Helvetica Neue Medium;
+		font-size: 18px;
+		padding-right: 24px;
+	}
+
+  }
+
