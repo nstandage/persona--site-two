@@ -15,7 +15,8 @@ var menuScene = new ScrollMagic.Scene({
   triggerHook: 0.1,
   reverse: true
 })
-  .setClassToggle(".menu", "darkMenu")
+  .on("enter", darkMenuEnter)
+  .on("leave", darkMenuLeave)
   .addTo(controller);
 
 var logoScene = new ScrollMagic.Scene({
@@ -34,4 +35,14 @@ function contactButton() {
 
   form.style.display = "block";
   console.log(typeof form);
+}
+
+function darkMenuEnter() {
+  document.getElementById("noteImg").src = "../images/music-note-white.png";
+  document.getElementById("bracketImg").src = "../images/brackets-white.png";
+}
+
+function darkMenuLeave() {
+  document.getElementById("noteImg").src = "../images/music-note-black.png";
+  document.getElementById("bracketImg").src = "../images/brackets-black.png";
 }

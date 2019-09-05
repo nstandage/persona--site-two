@@ -3,8 +3,7 @@
   display: flex;
   flex-flow: column;
   position: relative;
-  align-items: center;
-  border: 1px solid blue; }
+  align-items: center; }
 
 .container-title-compartment {
   margin: 2em 12vw;
@@ -54,8 +53,7 @@
   justify-content: center;
   width: auto;
   height: auto;
-  position: relative;
-  border: 3px solid black; }
+  position: relative; }
 
 .content-subsection {
   display: flex;
@@ -63,7 +61,6 @@
   margin: 2em 4em;
   padding: 0px;
   align-items: center;
-  border: 1px solid pink;
   min-width: 20%;
   justify-content: center; }
 
@@ -77,12 +74,10 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  position: relative;
-  border: 1px solid red; }
+  position: relative; }
 
 .subsection-title {
   text-align: center;
-  border: 1px solid darkGreen;
   font-size: 46px;
   font-family: Helvetica Neue Bold; }
 
@@ -92,8 +87,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: relative;
-  border: 1px solid green; }
+  position: relative; }
 
 .subsection-body-content {
   width: auto; }

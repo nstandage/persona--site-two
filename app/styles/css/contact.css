@@ -1,0 +1,96 @@
+/* -------------- Fonts --------------- */
+@font-face {
+  font-family: "Helvetica Neue Heavy";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Heavy.woff") format("woff"); }
+
+@font-face {
+  font-family: "Helvetica Neue Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: "Helvetica Neue Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "Helvetica Neue Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Thin.woff") format("woff"); }
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeueBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Helvetica Neue Ultra Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue/HelveticaNeueUltraLight.woff") format("woff"); }
+
+body {
+  display: flex;
+  justify-content: center; }
+
+.contactFormContainer {
+  margin: 1em 4em 3em 4em;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-content: center;
+  z-index: 100;
+  border: 3px solid purple; }
+
+.contactForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1em 2em 3em 2em;
+  padding: 1em;
+  margin: 0em;
+  padding: 0em;
+  background-color: white;
+  transition: 1s; }
+
+.contactInput {
+  margin: 0.3em;
+  padding: 0.6em;
+  max-width: 40em;
+  font-size: 1em;
+  font-family: Helvetica Neue Medium;
+  font-weight: 100;
+  border: 2px solid lightgrey; }
+
+.contactBody {
+  max-width: 40em;
+  margin: 0.3em;
+  padding: 0.6em;
+  font-size: 1em;
+  font-family: Helvetica Neue Medium;
+  font-weight: 100;
+  border: 2px solid lightgrey; }
+
+form {
+  font-family: Helvetica Neue Medium;
+  font-size: 1.05em;
+  max-width: 50em;
+  width: 40em; }
+
+.submitButton {
+  font-family: Helvetica Neue Medium;
+  font-size: 1em;
+  height: 3em;
+  width: 7em;
+  min-width: auto;
+  background-color: black;
+  border-radius: 1.5em;
+  color: white;
+  border: none;
+  cursor: pointer; }

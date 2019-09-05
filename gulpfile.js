@@ -9,7 +9,7 @@ const browserSync = require("browser-sync").create();
 
 function style() {
   return gulp
-    .src("./app/styles/scss/**/*.scss")
+    .src("./app/styles/scss/*.scss")
     .pipe(sass().on("error", sass.logError))
     .pipe(gulp.dest("./app/styles/css"))
     .pipe(browserSync.stream());

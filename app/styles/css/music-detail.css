@@ -88,10 +88,10 @@ body {
 .contactContainerDark a {
   color: white; }
 
-.darkMenu .bracketButton img {
+.darkMenu .bracketButton::after img {
   content: url("../../images/brackets-white.png"); }
 
-.darkMenu .musicNoteButton img {
+.darkMenu .musicNoteButton::before img {
   content: url("../../images/music-note-white.png"); }
 
 .darkMenu .dropdown .link {
