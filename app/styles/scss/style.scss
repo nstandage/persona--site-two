@@ -66,14 +66,15 @@ svg {
 .contactContainer {
   position: absolute;
   transform: rotate(-90deg);
-  bottom: 80px;
+  bottom: 89px;
   right: -70px;
   padding: 0px;
   margin: 0;
+  cursor: pointer;
   a {
     text-decoration: none;
     font-family: Helvetica Neue Medium;
-    font-size: 50px;
+    font-size: 54px;
     color: $accent-color;
     bottom: 0px;
     right: 0px;
@@ -111,13 +112,12 @@ svg {
     display: none;
     position: absolute;
     padding: 0px;
-    z-index: 3;
+    z-index: 10;
     margin: 38px 0px 0px 0px;
     align-items: center;
     flex-direction: column;
-    min-width: 11em;
     padding: 3px 0px 0px 0px;
-    z-index: 10;
+    min-width: 11em;
 
     a {
       width: 100%;
@@ -180,15 +180,15 @@ svg {
 
   h2 {
     color: $accent-color;
-    font-family: Helvetica Neue Medium;
-    font-size: 58px;
+    font-family: Helvetica Neue Bold;
+    font-size: 80px;
     margin: 18px;
   }
 
   p {
     color: $accent-color;
-    font-family: Helvetica Neue Light;
-    font-size: 17px;
+    font-family: Helvetica Neue Thin;
+    font-size: 22px;
     margin: 0em 0em 0em 2em;
   }
 }

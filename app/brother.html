@@ -7,9 +7,17 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="styles/css/music-detail.css"
+      href="styles/css/detail-style.css"
       media="screen"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/css/ns-framework.css"
+      media="screen"
+    />
+ <link rel="stylesheet" href="styles/css/contact.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <title>Brother.</title>
   </head>
   <body>
@@ -19,7 +27,7 @@
       </div>
       <!--/Logo-->
       <div class="contactContainer">
-        <a href="https://www.google.com">Contact.</a>
+        <a id="contact-button">Contact.</a>
       </div>
       <!--/contactContainer-->
 
@@ -30,14 +38,11 @@
           </a>
           <div class="dropdown bracketDropdown">
             <a class="hoverColorBrother link" href="./test-prep.html"
-              >Test Prep Tech</a
-            >
+              >Test Prep Tech</a >
             <a class="hoverColorBrother link" href="./fat-cats.html"
-              >Fat Cats</a
-            >
+              >Fat Cats</a>
             <a class="hoverColorBrother link" href="./penny-wise.html"
-              >Penny Wise</a
-            >
+              >Penny Wise</a>
           </div>
           <!--/.dropdown bracketDropdown -->
         </div>
@@ -72,15 +77,17 @@
 	      <img src="images/brother-color.JPG">
 
       </div>
-      <div class="subtitle">
-        <h1>Work</h1>
-        <hr>
-      </div>
-      <!-- /. subtitle-->
 
-     <div class="contentContainer">
-	     <div class="contentAudioSection">
-	     <div class="contentAudioTextContainer">
+ 
+      <div class="content-container">
+        <div class="content-section">
+          <div class="section-body-compartment">
+            <div class="content-subsection left">
+              <div class="subsection-title-compartment">
+                <h1 class="subsection-title">My Work</h1>
+              </div>
+              <div class="subsection-body-compartment">
+                <p class="body-text-medium">
   <ul>
 
 		    <li>Recorded and mixed most of Volume II.</li>
@@ -88,17 +95,30 @@
 		    <li>Recorded drums for upcoming Volume III</li>
 	    </ul>
 
-          </div>
-	  <div class="contentAudioPlayerContainer">
-
+ </p>
+              </div>
+            </div>
+            <div class="content-subsection right">
+              <div class="subsection-body-compartment">
 <iframe src="https://open.spotify.com/embed/album/4sP0JjEhNsW537Pw6PSdlr" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+            </div>
+          </div>
         </div>
-	<!--/.contentAudioPlayerContainer -->
-        </div>
-        <!-- /.contentSection-->
+        <!-- /.contentSection 1-->
 
-     </div>
-          <!-- /.contentContainer-->
+      </div>
+      <!-- /.content-container-->
+ 
+
+
+
+
+
+
+
+
+
 
 
 
@@ -111,10 +131,10 @@
         </div>
 	<!-- /.subtitle-->
 
-	<div class="creationContainer">
+	<div class="eventsContainer">
 		<p><b>Rooftop - Summer 2018</b><br>During the Summer of 2018 we were asked to play the Rooftop Concert Series with the National Parks and The Solarists. There were around 3000 people in the audience. (Pictures)
-		</p><img src="images/brother-rooftop.JPG"><p><b>Europe - 2019</b><br>Early 2019, we had the opportinity to go to Europe as a band. We traveled to Zurich, Switzerland; Dublin, Irland; London, England; and Paris, France. We had a blast and were able to play a local show in London at Canverdish Arms. (Pics)
-</p><br><br><img src="images/brother-paris.JPEG">
+		</p><img src="images/brother-rooftop.JPG"><p><b>Europe - 2019</b><br>Early 2019, we had the opportinity to go to Europe as a band. We traveled to Zurich, Switzerland; Dublin, Irland; London, England; and Paris, France. We had a blast and were able to play a local show in London at Canverdish Arms.
+		</p><img src="images/brother-paris.JPEG">
 
 
 
@@ -143,11 +163,36 @@
         <p>© 2019 Nathan Standage</p>
 
       </footer>
+<div id="contactPopup" class="contactPopup animated fadeIn">
+  <!-- Modal content -->
+    <div id="contactFormContainer" class="contactFormContainer animated fadeInDown">
+	      <span class="close">&times;</span>
+      <form class="contactForm">
+	      <h1 class="contactTitle">Contact.</h1>
+        Name:
+        <input class="contactInput" type="text" name="fname" /><br />
+        Email:
+        <input class="contactInput" type="text" name="lname" /><br />
+        Subject:
+        <input class="contactInput" type="text" name="lname" /><br />
+        Message:
+        <textarea rows="20" class="contactBody"></textarea><br />
+        <div class="submitButtonContainer">
+          <input class="submitButton yellow" type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <!-- /.contactContainer-->
+
+</div>
+<!-- /.myModal -->
 
 
     </div>
     <!-- /.page-->
 
+<!-- The Modal -->
+    <script src="scripts/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>

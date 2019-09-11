@@ -6,7 +6,7 @@ $accent-color-test-prep: rgb(188, 87, 83);
 $accent-color-fat-cats: rgb(67, 144, 193);
 
 $accent-color-roadie: rgb(114, 29, 67);
-$accent-color-brother: rgb(82, 82, 82);
+$accent-color-brother: rgb(187, 124, 169);
 $accent-color-personal: rgb(108, 43, 161);
 
 body {
@@ -54,15 +54,16 @@ body {
 .contactContainer {
   position: fixed;
   transform: rotate(-90deg);
-  bottom: 80px;
+  bottom: 89px;
   right: -70px;
   padding: 0px;
   margin: 0;
   z-index: 3;
+  cursor: pointer;
   a {
     text-decoration: none;
     font-family: Helvetica Neue Medium;
-    font-size: 50px;
+    font-size: 54px;
     color: $primary-color;
     bottom: 0px;
     right: 0px;
@@ -317,7 +318,42 @@ body {
     font-size: 20px;
     color: white;
   }
+
+  img {
+	  width: 80%;
+	  margin: 80px 0px 60px 0px;
+  }
 }
+
+
+.eventsContainer {
+  margin: 0em 14em;
+  padding: 0em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-family: Helvetica Neue Bold;
+    font-size: 34px;
+    color: white;
+  }
+
+  p {
+    font-family: Helvetica Neue Light;
+    font-size: 20px;
+    color: white;
+    padding: 2px;
+    margin: 0px;
+  }
+
+  img {
+    width: 80%;
+    margin: 8px 0px 100px 0px;
+  }
+}
+
+
 
 .dark {
   margin: 2em 0em 0em 0em;
@@ -383,5 +419,25 @@ footer {
 
   .contentSectionSimple {
     margin-right: 4em;
+  }
+}
+ul {
+  li {
+    font-family: Helvetica Neue Medium;
+    font-size: 18px;
+    padding-right: 24px;
+  }
+}
+
+.bioPics {
+  padding: 12px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  img {
+    margin: 0px 12px;
+    max-height: 300px;
+    height: auto;
+    border: 3px solid black;
   }
 }

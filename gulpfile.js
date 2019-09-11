@@ -18,8 +18,8 @@ function style() {
 function watch() {
   browserSync.init({
     server: {
-      baseDir: "app/"
-      // index: "contact.html"
+      baseDir: "app/",
+      index: "contact.html"
     }
   });
   gulp.watch("./app/styles/scss/**/*.scss", style);

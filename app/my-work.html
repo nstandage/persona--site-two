@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="styles/css/music-detail.css"
+      href="styles/css/detail-style.css"
       media="screen"
     />
     <link
@@ -16,6 +17,9 @@
       href="styles/css/ns-framework.css"
       media="screen"
     />
+ <link rel="stylesheet" href="styles/css/contact.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <title>My Work</title>
   </head>
   <body>
@@ -26,7 +30,7 @@
       <!--/Logo-->
 
       <div class="contactContainer">
-        <a href="https://www.google.com">Contact.</a>
+        <a id="contact-button">Contact.</a>
       </div>
       <!--/contactContainer-->
 
@@ -140,8 +144,35 @@
       <footer class="lightFooter">
         <p>© 2019 Nathan Standage</p>
       </footer>
+
+<div id="contactPopup" class="contactPopup animated fadeIn">
+  <!-- Modal content -->
+    <div id="contactFormContainer" class="contactFormContainer animated fadeInDown">
+	      <span class="close">&times;</span>
+      <form class="contactForm">
+	      <h1 class="contactTitle">Contact.</h1>
+        Name:
+        <input class="contactInput" type="text" name="fname" /><br />
+        Email:
+        <input class="contactInput" type="text" name="lname" /><br />
+        Subject:
+        <input class="contactInput" type="text" name="lname" /><br />
+        Message:
+        <textarea rows="20" class="contactBody"></textarea><br />
+        <div class="submitButtonContainer">
+          <input class="submitButton yellow" type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <!-- /.contactContainer-->
+
+</div>
+<!-- /.myModal -->
+
     </div>
     <!-- /.page-->
+
+	<script src="scripts/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="scripts/detail-scripts.js"></script>

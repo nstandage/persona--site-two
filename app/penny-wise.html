@@ -10,6 +10,19 @@
       href="styles/css/detail-style.css"
       media="screen"
     />
+
+ <link rel="stylesheet" href="styles/css/contact.css" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/css/ns-framework.css"
+      media="screen"
+    />
+ 
     <title>Penny Wise - Tip Tracker</title>
   </head>
   <body>
@@ -20,7 +33,7 @@
       <!--/Logo-->
 
       <div class="contactContainer">
-        <a href="https://www.google.com">Contact.</a>
+        <a id="contact-button">Contact.</a>
       </div>
       <!--/contactContainer-->
 
@@ -73,71 +86,132 @@
       </div>
       <!-- /.headline -->
 
-      <div class="subtitle">
-        <h1>Features</h1>
-        <hr />
-      </div>
-      <!-- /. subtitle-->
 
-      <div class="contentContainer">
-        <div class="contentSection">
-          <div class="contentTextContainer">
-            <h1 class="contentTitle">Simple Design</h1>
-            <p class="contentBody">
-              Penny Wise is made with simplicity in mind. Easily view your
+      <div class="content-container">
+        <div class="content-section">
+          <div class="section-body-compartment">
+            <div class="content-subsection left">
+              <div class="subsection-title-compartment">
+                <h1 class="subsection-title">Simple Design</h1>
+              </div>
+              <div class="subsection-body-compartment">
+                <p class="body-text-medium">
+                Penny Wise is made with simplicity in mind. Easily view your
               worked days right from the main screen.
-            </p>
-          </div>
-          <div class="contentImage">
-            <img class="imgRight" src="images/filled-calendar-screenshot.png" />
+ </p>
+              </div>
+            </div>
+            <div class="content-subsection right">
+              <div class="subsection-body-compartment">
+                <img
+                  class="subsection-body-content"
+                  src="images/filled-calendar-screenshot.png"
+                  style="width: 240px"
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <!-- /.contentSection-->
+        <!-- /.contentSection 1-->
 
-        <div class="contentSection">
-          <div class="contentImage">
-            <img class="imgLeft" src="images/filled-calendar-screenshot.png" />
-          </div>
-          <div class="contentTextContainer">
-            <h1 class="contentTitle">Quickly Add Tips</h1>
-            <p class="contentBody">
-              Easily add a tip by tapping a day on the calendar or add a tip to
-              the current day by tapping the + button.
-            </p>
+        <div class="content-section">
+          <div class="section-body-compartment">
+            <div class="content-subsection left">
+              <div class="subsection-body-compartment">
+                <img
+                  class="subsection-body-content"
+                  src="images/enter-tip-screenshot.png""
+                  style="width: 240px"
+                />
+              </div>
+              <!-- /.subsection-body-compartment left -->
+            </div>
+            <!-- /.section-body-compartment -->
+            <div class="content-subsection right">
+              <div class="subsection-title-compartment">
+                <h1 class="subsection-title">Quickly Add Tips</h1>
+              </div>
+              <!-- /.subsecction-title-compartment" -->
+              <div class="subsection-body-compartment">
+                <p class="body-text-medium">
+                 Easily add a tip by tapping a day on the calendar or add a tip to the current day by tapping the + button.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- /.contentSection-->
+        <!-- /.contentSection 2-->
 
-        <div class="contentSection">
-          <div class="contentTextContainer">
-            <h1 class="contentTitle">Quickly See Useful Data</h1>
-            <p class="contentBody">
-              Tap on days to see tips, hours, and an hourly average for selected
-              days.
-            </p>
+        <div class="content-section">
+          <div class="section-body-compartment">
+            <div class="content-subsection left">
+              <div class="subsection-title-compartment">
+                <h1 class="subsection-title">Quickly See Useful Data</h1>
+              </div>
+              <div class="subsection-body-compartment">
+                <p class="body-text-medium">
+		Tap on days to see tips, hours, and an hourly average for selected days.
+                </p>
+              </div>
+            </div>
+            <!-- /.content-subsection left-->
+            <div class="content-subsection right">
+              <div class="subsection-body-compartment">
+                <img
+                  class="subsection-body-content"
+                  src="images/filled-last-week-selected-screenshot.png"
+                  style="width: 240px"
+                />
+              </div>
+              <!-- /.subsection-body-compartment -->
+            </div>
+            <!--/.content-subsection right-->
           </div>
-          <div class="contentImage">
-            <img class="imgRight" src="images/filled-calendar-screenshot.png" />
-          </div>
+          <!--/.section-body-compartment -->
         </div>
-        <!-- /.contentSection-->
 
-        <div class="contentSection">
-          <div class="contentImage">
-            <img class="imgLeft" src="images/filled-calendar-screenshot.png" />
-          </div>
-          <div class="contentTextContainer">
-            <h1 class="contentTitle">Multiple Entries Per Day</h1>
-            <p class="contentBody">
-              Additional entries can be added to a single day.<br />To do so,
-              select the desired day, bring on the tip list by tapping edit, and
-              tap the + button.
-            </p>
+        <div class="content-section">
+          <div class="section-body-compartment">
+            <div class="content-subsection left">
+              <div class="subsection-body-compartment">
+                <img
+                  class="subsection-body-content"
+                  src="images/edit-screenshot.png"
+                  style="width: 240px"
+                />
+              </div>
+              <!-- /.subsection-body-compartment left -->
+            </div>
+            <!-- /.section-body-compartment -->
+            <div class="content-subsection right">
+              <div class="subsection-title-compartment">
+                <h1 class="subsection-title">Multiple Entries Per Day</h1>
+              </div>
+              <!-- /.subsecction-title-compartment" -->
+              <div class="subsection-body-compartment">
+                <p class="body-text-medium">
+		Additional entries can be added to a single day.<br />To do so, select the desired day, bring on the tip list by tapping edit, and tap the + button.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- /.contentSection-->
+        <!-- /.contentSection 2-->
+
+
       </div>
-      <!-- /.contentContainer-->
+      <!-- /.content-container-->
+ 
+
+
+
+
+
+
+
+
+
+
+
 
       <div class="appStoreContainer">
         <img class="appIcon" src="images/icon_blue.png" />
@@ -203,9 +277,35 @@
       <footer class="darkFooter">
         <p>© 2019 Nathan Standage</p>
       </footer>
+
+<div id="contactPopup" class="contactPopup animated fadeIn">
+  <!-- Modal content -->
+    <div id="contactFormContainer" class="contactFormContainer animated fadeInDown">
+	      <span class="close">&times;</span>
+      <form class="contactForm">
+	      <h1 class="contactTitle">Contact.</h1>
+        Name:
+        <input class="contactInput" type="text" name="fname" /><br />
+        Email:
+        <input class="contactInput" type="text" name="lname" /><br />
+        Subject:
+        <input class="contactInput" type="text" name="lname" /><br />
+        Message:
+        <textarea rows="20" class="contactBody"></textarea><br />
+        <div class="submitButtonContainer">
+          <input class="submitButton yellow" type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <!-- /.contactContainer-->
+
+</div>
+<!-- /.myModal -->
+
     </div>
     <!-- /.page-->
 
+	<script src="scripts/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>

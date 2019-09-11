@@ -35,57 +35,59 @@
   font-weight: normal;
   src: url("../fonts/HelveticaNeue/HelveticaNeueUltraLight.woff") format("woff"); }
 
-body {
-  display: flex;
-  justify-content: center; }
-
 .contactFormContainer {
-  margin: 1em 4em 3em 4em;
-  display: none;
-  position: fixed;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   z-index: 100;
-  border: 3px solid purple; }
+  background-color: #fefefe;
+  width: 75%;
+  height: 75%;
+  opacity: 0.99;
+  animation-delay: 0.5s; }
+
+.contactTitle {
+  font-size: 50px;
+  margin: 18px 0px 36px 0px;
+  font-family: Helvetica Neue Bold; }
 
 .contactForm {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 1em 2em 3em 2em;
-  padding: 1em;
-  margin: 0em;
-  padding: 0em;
+  margin: 16px 0px 8px 0px;
   background-color: white;
-  transition: 1s; }
+  transition: 1s;
+  width: 75%;
+  height: 100%;
+  font-family: Helvetica Neue Medium;
+  font-size: 18px;
+  max-width: 50em;
+  overflow-y: scroll; }
 
 .contactInput {
-  margin: 0.3em;
-  padding: 0.6em;
-  max-width: 40em;
-  font-size: 1em;
-  font-family: Helvetica Neue Medium;
+  margin: 0.2em;
+  padding: 0.2em;
+  font-size: 18px;
+  width: auto;
+  font-family: Helvetica Neue Thin;
   font-weight: 100;
-  border: 2px solid lightgrey; }
+  border: 1px solid lightgrey; }
 
 .contactBody {
-  max-width: 40em;
-  margin: 0.3em;
-  padding: 0.6em;
-  font-size: 1em;
-  font-family: Helvetica Neue Medium;
+  width: auto;
+  margin: 0.2em;
+  padding: 0.2em;
+  font-size: 18px;
+  font-family: Helvetica Neue Thin;
   font-weight: 100;
-  border: 2px solid lightgrey; }
-
-form {
-  font-family: Helvetica Neue Medium;
-  font-size: 1.05em;
-  max-width: 50em;
-  width: 40em; }
+  border: 1px solid lightgrey; }
 
 .submitButton {
   font-family: Helvetica Neue Medium;
   font-size: 1em;
+  margin-bottom: 8px;
   height: 3em;
   width: 7em;
   min-width: auto;
@@ -93,4 +95,42 @@ form {
   border-radius: 1.5em;
   color: white;
   border: none;
+  cursor: pointer; }
+
+/* The Modal (background) */
+.contactPopup {
+  margin: 0px;
+  padding: 0px;
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  z-index: 10;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Black w/ opacity */
+  box-sizing: border-box; }
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  display: none; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
   cursor: pointer; }

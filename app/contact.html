@@ -7,9 +7,19 @@
     <title>Contact</title>
     <link rel="stylesheet" href="styles/css/contact.css" />
   </head>
+
+
   <body>
+
+
+    <button id="myBtn">Contact.</button>
+
+<!-- The Modal -->
+<div id="contactPopup" class="contactPopup">
+  <!-- Modal content -->
     <div id="contactForm" class="contactFormContainer">
-      <form class="contactForm" action="/action_page.php">
+	    <!--  <span class="close">&times;</span>  -->
+      <form class="contactForm">
         Name:
         <input class="contactInput" type="text" name="fname" /><br />
         Email:
@@ -24,8 +34,10 @@
       </form>
     </div>
     <!-- /.contactContainer-->
-    <button onClick="contactButton()">Click</button>
 
-    <script src="scripts/detail-scripts.js"></script>
+</div>
+<!-- /.myModal -->
+    <script src="scripts/contact.js"></script>
   </body>
 </html>
+
