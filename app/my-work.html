@@ -37,14 +37,14 @@
       <div class="menu">
         <div class="bracketIcon menuIcon">
           <a class="menuButton bracketButton">
-            <img src="images/brackets-black.png" />
+            <img id="bracketImg" src="images/brackets-black.png" />
           </a>
           <div class="dropdown bracketDropdown">
-            <a class="hoverColorRoadie link" href="./test-prep.html"
+            <a class="hoverColorRoadie link black-text" href="./test-prep.html"
               >Test Prep Tech</a
             >
-            <a class="hoverColorRoadie link" href="./fat-cats.html">Fat Cats</a>
-            <a class="hoverColorRoadie link" href="./penny-wise.html"
+            <a class="hoverColorRoadie link black-text" href="./fat-cats.html">Fat Cats</a>
+            <a class="hoverColorRoadie link black-text" href="./penny-wise.html"
               >Penny Wise</a
             >
           </div>
@@ -54,7 +54,7 @@
 
         <div class="musicNoteIcon menuIcon">
           <a class="menuButton musicNoteButton">
-            <img src="images/music-note-black.png" />
+            <img id="noteImg" src="images/music-note-black.png" />
           </a>
           <div class="dropdown musicNoteDropdown">
             <a class="hoverColorRoadie link" href="./brother.html">Brother.</a>
@@ -63,6 +63,44 @@
         </div>
       </div>
       <!--/menu-->
+
+      <div class="menu-hamburger" id="menu-hamburger">
+        <div class="hamburgerIcon menuIcon">
+          <a class="menuButton hamburgerButton">
+            <img id="hamburgerMenu" src="images/hamburger-icon-black.png" />
+          </a>
+        </div>
+        <!-- /.hamburgerIcon-->
+      </div>
+      <!--/.menu-hamburger -->
+
+      <div class="dropdown-mobile animated fadeIn" id="dropdown-mobile">
+        <div class="mobile-menu-darken"></div>
+        <!--./mobile-menu-darken-->
+        <div class="menu-items-mobile animated fadeInDown">
+          <div class="menu-title-mobile"><img src="images/brackets-white.png" /></div>
+          <div class="menu-item-mobile">
+            <a href="./test-prep.html">Test Prep Tech</a>
+          </div>
+          <div class="menu-item-mobile">
+            <a href="./fat-cats.html">Fat Cats</a>
+          </div>
+          <div class="menu-item-mobile">
+            <a href="./penny-wise.html">Penny Wise</a>
+          </div>
+          <div class="menu-title-mobile">
+            <img src="images/music-note-white.png" />
+          </div>
+          <div class="menu-item-mobile">
+            <a href="./brother.html">Brother.</a>
+          </div>
+          <div class="menu-item-mobile">
+            <a href="./my-work.html">My Work</a>
+          </div>
+        </div>
+        <!-- /.menu-items-mobile-->
+      </div>
+      <!--/.dropdown-mobile -->
 
       <div class="title">
         <h1>My Work</h1>
@@ -78,12 +116,7 @@
               </div>
               <div class="subsection-body-compartment">
                 <p class="body-text-medium">
-                  Test Prep Tech uses the Angular and Ionic frameworks to write
-                  all of their apps. They’re available for both iOS and Android.
-                  Because the apps are so similar in nature, they share a
-                  codebase. We use node scripts to replace the question data for
-                  each app. A major part of what I’ve done is providing
-                  enhancements to those scripts.
+								I had the opportunity to work with Roadie on her first EP. We recorded the bulk of the tracks live at June Audio in Provo, UT. Afterwards, we tracked other elements at personal studio. I engineered and mixed the EP.
                 </p>
               </div>
             </div>
@@ -126,12 +159,7 @@
               <!-- /.subsecction-title-compartment" -->
               <div class="subsection-body-compartment">
                 <p class="body-text-medium">
-                  Test Prep Tech uses the Angular and Ionic frameworks to write
-                  all of their apps. They’re available for both iOS and Android.
-                  Because the apps are so similar in nature, they share a
-                  codebase. We use node scripts to replace the question data for
-                  each app. A major part of what I’ve done is providing
-                  enhancements to those scripts.
+								Aaron Ned is a singer/songwriter based in Provo, UT. We recorded everything at my personal studio. I engineered, mixed, and mastered the EP.
                 </p>
               </div>
             </div>
@@ -163,18 +191,27 @@
           <input class="submitButton yellow" type="submit" value="Submit" />
         </div>
       </form>
+			<div class="socialLinks">
+				<a href="https://twitter.com/nstandage" target="_blank"><img class="socialImage" src="./images/Twitter_Social_Icon_Circle_Color.png">
+					<a href="https://www.instagram.com/nstandage/" target="_blank"><img class="socialImage" src="./images/glyph-logo_may2016.png">
+						<a href="https://github.com/nstandage" target="_blank"><img class="socialImage" src="./images/Github-Mark-120px-plus.png">
+
+			</div>
     </div>
     <!-- /.contactContainer-->
 
 </div>
 <!-- /.myModal -->
 
+<div class="dark" style="height: 1px; background-color: white !important;"></div>
     </div>
     <!-- /.page-->
 
 	<script src="scripts/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="scripts/detail-scripts.js"></script>
   </body>
 </html>

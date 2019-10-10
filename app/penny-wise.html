@@ -43,13 +43,13 @@
             <img id="bracketImg" src="images/brackets-black.png" />
           </a>
           <div class="dropdown bracketDropdown">
-            <a class="hoverColorPennyWise link" href="./test-prep.html"
+            <a class="hoverColorPennyWise link black-text" href="./test-prep.html"
               >Test Prep Tech</a
             >
-            <a class="hoverColorPennyWise link" href="./fat-cats.html"
+            <a class="hoverColorPennyWise link black-text" href="./fat-cats.html"
               >Fat Cats</a
             >
-            <a class="hoverColorPennyWise link" href="./penny-wise.html"
+            <a class="hoverColorPennyWise link black-text" href="./penny-wise.html"
               >Penny Wise</a
             >
           </div>
@@ -62,14 +62,52 @@
             <img id="noteImg" src="images/music-note-black.png" />
           </a>
           <div class="dropdown musicNoteDropdown">
-            <a class="hoverColorPennyWise link" href="./brother.html"
+            <a class="hoverColorPennyWise link black-text" href="./brother.html"
               >Brother.</a
             >
-            <a class="hoverColorPennyWise" href="./my-work.html">My Work</a>
+            <a class="hoverColorPennyWise black-text" href="./my-work.html">My Work</a>
           </div>
         </div>
       </div>
       <!--/menu-->
+      <div class="menu-hamburger" id="menu-hamburger">
+        <div class="hamburgerIcon menuIcon">
+          <a class="menuButton hamburgerButton">
+            <img id="hamburgerMenu" src="images/hamburger-icon-black.png" />
+          </a>
+        </div>
+        <!-- /.hamburgerIcon-->
+      </div>
+      <!--/.menu-hamburger -->
+
+      <div class="dropdown-mobile animated fadeIn" id="dropdown-mobile">
+        <div class="mobile-menu-darken"></div>
+        <!--./mobile-menu-darken-->
+        <div class="menu-items-mobile animated fadeInDown">
+          <div class="menu-title-mobile"><img src="images/brackets-white.png" /></div>
+          <div class="menu-item-mobile">
+            <a href="./test-prep.html">Test Prep Tech</a>
+          </div>
+          <div class="menu-item-mobile">
+            <a href="./fat-cats.html">Fat Cats</a>
+          </div>
+          <div class="menu-item-mobile">
+            <a href="./penny-wise.html">Penny Wise</a>
+          </div>
+          <div class="menu-title-mobile">
+            <img src="images/music-note-white.png" />
+          </div>
+          <div class="menu-item-mobile">
+            <a href="./brother.html">Brother.</a>
+          </div>
+          <div class="menu-item-mobile">
+            <a href="./my-work.html">My Work</a>
+          </div>
+        </div>
+        <!-- /.menu-items-mobile-->
+      </div>
+      <!--/.dropdown-mobile -->
+
 
       <div class="title">
         <h1>Penny Wise</h1>
@@ -134,7 +172,7 @@
               <!-- /.subsecction-title-compartment" -->
               <div class="subsection-body-compartment">
                 <p class="body-text-medium">
-                 Easily add a tip by tapping a day on the calendar or add a tip to the current day by tapping the + button.</p>
+                 Easily add a tip by tapping a day on the calendar or by tapping the + button.</p>
               </div>
             </div>
           </div>
@@ -189,7 +227,7 @@
               <!-- /.subsecction-title-compartment" -->
               <div class="subsection-body-compartment">
                 <p class="body-text-medium">
-		Additional entries can be added to a single day.<br />To do so, select the desired day, bring on the tip list by tapping edit, and tap the + button.
+		Additional entries can be added to a single day.<br />To do so, select the desired day, bring up the tip list by tapping edit, and tap the + button.
                 </p>
               </div>
             </div>
@@ -201,17 +239,6 @@
       </div>
       <!-- /.content-container-->
  
-
-
-
-
-
-
-
-
-
-
-
 
       <div class="appStoreContainer">
         <img class="appIcon" src="images/icon_blue.png" />
@@ -241,31 +268,20 @@
           <h1>Design & UX</h1>
           <p>
             I had two main goals while designing Penny Wise: I wanted the user
-            interface to be clean and I wanted it to be simple and easy to use.
-            The center of the app is the calendar. The calendar allows users to
+            interface to be clean and simple and I wanted it to be easy to use.
+            The center of the app is the calendar, which allows users to
             enter tips as well as view and interact with their data without
-            going to other screens.<br /><br />When picking the main blue color,
-            I knew I wanted something bright. I much prefer Apple's bright,
-            vibrant colors to the more dark, muted colors of Google's Material
-            Design. I originally thought Green would be the best main color
-            because it implies money, but I decided to go with blue because it's
-            not quite as harsh. Plus, every other tip tracking app uses green. I
-            went through many different shades of blue and ended up choose one
-            that's very similar to Apple's default button blue. I liked its
-            balance of brightness and familiarity. It just looked right.
-          </p>
+            going to other screens.</p>
           <h1>Challenges</h1>
           <p>
-            One of the biggest challenges I ran into was with the calendar. I
+            One of the biggest challenges I ran into was the calendar. I
             wanted it to have more functionality than just selecting a day, but
             the library I used only allows one date to be selected at a time.
-            Couple that with the different states a particular day can be in and
+            Couple that with the different states a particular day can be in, and
             I had a really hard time making sure the data behind the scenes
-            matched the data displayed on the calendar. I had to come up with my
+            matched the data displayed on the calendar. I came up with my
             own system for keeping track of selected days and displaying those
-            days correctly. I had to take a few runs at the problem to make sure
-            all the bugs were gone.
-          </p>
+            days correctly.</p>
           <h1>Tech Used</h1>
           <p>
             Native iOS frameworks<br />- UIKit<br />- Core Data<br />- In-App
@@ -289,13 +305,19 @@
         Email:
         <input class="contactInput" type="text" name="lname" /><br />
         Subject:
-        <input class="contactInput" type="text" name="lname" /><br />
+        <input class="contactInput" type="text" name="contact" /><br />
         Message:
         <textarea rows="20" class="contactBody"></textarea><br />
         <div class="submitButtonContainer">
           <input class="submitButton yellow" type="submit" value="Submit" />
         </div>
       </form>
+			<div class="socialLinks">
+				<a href="https://twitter.com/nstandage" target="_blank"><img class="socialImage" src="./images/Twitter_Social_Icon_Circle_Color.png">
+					<a href="https://www.instagram.com/nstandage/" target="_blank"><img class="socialImage" src="./images/glyph-logo_may2016.png">
+						<a href="https://github.com/nstandage" target="_blank"><img class="socialImage" src="./images/Github-Mark-120px-plus.png">
+
+			</div>
     </div>
     <!-- /.contactContainer-->
 

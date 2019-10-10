@@ -30,16 +30,16 @@
       <div class="menu">
         <div class="bracketIcon menuIcon">
           <a class="menuButton bracketButton">
-            <img src="images/brackets-black.png" />
+            <img id="bracketImg" src="images/brackets-black.png" />
           </a>
           <div class="dropdown bracketDropdown">
-            <a class="hoverColorFatCats link" href="./test-prep.html"
+            <a class="hoverColorFatCats link black-text" href="./test-prep.html"
               >Test Prep Tech</a
             >
-            <a class="hoverColorFatCats link" href="./fat-cats.html"
+            <a class="hoverColorFatCats link black-text" href="./fat-cats.html"
               >Fat Cats</a
             >
-            <a class="hoverColorFatCats link" href="./penny-wise.html"
+            <a class="hoverColorFatCats link black-text" href="./penny-wise.html"
               >Penny Wise</a
             >
           </div>
@@ -49,36 +49,72 @@
 
         <div class="musicNoteIcon menuIcon">
           <a class="menuButton musicNoteButton">
-            <img src="images/music-note-black.png" />
+            <img id="noteImg" src="images/music-note-black.png" />
           </a>
           <div class="dropdown musicNoteDropdown">
-            <a class="hoverColorFatCats link" href="./brother.html">Brother.</a>
-            <a class="hoverColorFatCats link" href="./my-work.html">My Work</a>
+            <a class="hoverColorFatCats link black-text" href="./brother.html">Brother.</a>
+            <a class="hoverColorFatCats link black-text" href="./my-work.html">My Work</a>
             
           </div>
         </div>
       </div>
       <!--/menu-->
 
+      <div class="menu-hamburger" id="menu-hamburger">
+        <div class="hamburgerIcon menuIcon">
+          <a class="menuButton hamburgerButton">
+            <img id="hamburgerMenu" src="images/hamburger-icon-black.png" />
+
+          </a>
+        </div>
+        <!-- /.hamburgerIcon-->
+      </div>
+      <!--/.menu-hamburger -->
+
+      <div class="dropdown-mobile animated fadeIn" id="dropdown-mobile">
+        <div class="mobile-menu-darken"></div>
+        <!--./mobile-menu-darken-->
+        <div class="menu-items-mobile animated fadeInDown">
+          <div class="menu-title-mobile"><img src="images/brackets-white.png" /></div>
+          <div class="menu-item-mobile">
+            <a href="./test-prep.html">Test Prep Tech</a>
+          </div>
+          <div class="menu-item-mobile">
+            <a href="./fat-cats.html">Fat Cats</a>
+          </div>
+          <div class="menu-item-mobile">
+            <a href="./penny-wise.html">Penny Wise</a>
+          </div>
+          <div class="menu-title-mobile">
+            <img src="images/music-note-white.png" />
+          </div>
+          <div class="menu-item-mobile">
+            <a href="./brother.html">Brother.</a>
+          </div>
+          <div class="menu-item-mobile">
+            <a href="./my-work.html">My Work</a>
+          </div>
+        </div>
+        <!-- /.menu-items-mobile-->
+      </div>
+      <!--/.dropdown-mobile -->
+
       <div class="title">
-        <h1>Fat Cats Landing Page</h1>
+        <h1>Fat Cats</h1>
         <hr />
       </div>
       <!-- /. title -->
       <div class="headline">
         <h1>
-          Fat Cats wanted a super simple landing page for their grand opening.
-          It would allow users to enter their info and then redirect them to an
-          external site to see pictures taken at their events. I created a CSV
-          file to store customer's info that they could download.
+          I was asked to create a super simple landing page for the Fat Cats grand opening in Saratoga Springs, UT. It prompts users to enter their contact info, which allows them to see pictures of the event.
         </h1>
       </div>
       <!-- /.headline -->
 
       <div class="contentContainerSimple">
         <div class="contentSectionSimple">
-          <img src="images/fat-cats-mac-screenshot.png" style="width: 550px" />
-          <img src="images/fat-cats-site.png" style="width:120px" />
+          <img class="mac-image" src="images/fat-cats-mac-screenshot.png" />
+          <img class="iphone-image" src="images/fat-cats-site.png" />
         </div>
         <!-- /.contentSectionSimple-->
      </div>
@@ -109,18 +145,27 @@
           <input class="submitButton yellow" type="submit" value="Submit" />
         </div>
       </form>
+			<div class="socialLinks">
+				<a href="https://twitter.com/nstandage" target="_blank"><img class="socialImage" src="./images/Twitter_Social_Icon_Circle_Color.png">
+					<a href="https://www.instagram.com/nstandage/" target="_blank"><img class="socialImage" src="./images/glyph-logo_may2016.png">
+						<a href="https://github.com/nstandage" target="_blank"><img class="socialImage" src="./images/Github-Mark-120px-plus.png">
+
+			</div>
     </div>
     <!-- /.contactContainer-->
 
 </div>
 <!-- /.myModal -->
 
+<div class="dark" style="height: 1px; background-color: white !important;"></div>
     </div>
     <!-- /.page-->
 
 	<script src="scripts/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="scripts/detail-scripts.js"></script>
   </body>
 </html>

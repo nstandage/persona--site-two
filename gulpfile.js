@@ -1,5 +1,3 @@
-//https://www.youtube.com/watch?v=QgMQeLymAdU
-"use strict";
 
 const gulp = require("gulp");
 const sass = require("gulp-sass");
@@ -18,8 +16,8 @@ function style() {
 function watch() {
   browserSync.init({
     server: {
-      baseDir: "app/",
-      index: "contact.html"
+      baseDir: "app/"
+ //     index: "contact.html"
     }
   });
   gulp.watch("./app/styles/scss/**/*.scss", style);

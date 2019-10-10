@@ -174,3 +174,11 @@ function getInfoData(id) {
   console.log(`Title: ${title}, Body: ${body}`);
   return { title: title, body: body };
 }
+
+document.getElementById("menu-hamburger").onclick = function() {
+  document.getElementById("dropdown-mobile").style.display = "flex";
+};
+
+document.getElementById("dropdown-mobile").onclick = function() {
+  document.getElementById("dropdown-mobile").style.display = "none";
+};

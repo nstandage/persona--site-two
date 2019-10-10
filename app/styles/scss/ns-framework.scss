@@ -20,7 +20,7 @@ $body-font-family: Helvetica Neue Medium;
 //-- ----------------- Content Container --------------
 
 .content-container {
-  margin: 2em;
+  margin: 4em;
   display: flex;
   flex-flow: column;
   position: relative;
@@ -96,11 +96,11 @@ $body-font-family: Helvetica Neue Medium;
 }
 
 .right {
-  margin-right: 12vw;
+  margin-right: 14vw;
 }
 
 .left {
-  margin-left: 12vw;
+  margin-left: 14vw;
 }
 
 .subsection-title-compartment {
@@ -127,19 +127,119 @@ $body-font-family: Helvetica Neue Medium;
 
 .subsection-body-content {
   width: auto;
+	margin: 2em;
 }
 
 .body-text-small {
   font-family: $body-font-family;
   font-size: $body-text-small;
+	text-align: center;
 }
 
 .body-text-medium {
   font-family: $body-font-family;
   font-size: $body-text-medium;
+	text-align: center;
 }
 
 .body-text-large {
   font-family: $body-font-family;
   font-size: $body-text-large;
+	text-align: center;
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+
+.section-body-compartment {
+
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  position: relative;
+}
+
+.subsection-title-compartment {
+
+	h1 {
+
+		font-size: 34px;
+		letter-spacing: -3px;
+		margin-bottom: -10px;
+	}
+}
+
+.subsection-body-compartment {
+
+	p {
+		font-size: 16px;
+		text-align: center;
+		font-family: Helvetica Neue Medium
+
+	}
+}
+
+
+.right, .left {
+  margin: auto 2em;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 641px) and (max-width: 1024px)  {
+
+
+.content-subsection {
+  margin: 1em;
+	max-width: 50vw;
+
+}
+
+.subsection-body-content {
+
+	margin: 1em;
+
+
+}
+
+
+.subsection-title {
+
+
+	font-size: 36px;
+
+
+}
+
+
+
+.body-text-medium {
+
+	font-size: 18px;
+
+	text-align: center;
+
+}
+
+
+
+
+
+//end
 }

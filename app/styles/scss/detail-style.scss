@@ -1,4 +1,4 @@
-@import "fonts";
+@import 'fonts';
 
 $primary-color: #000;
 $accent-color-penny-wise: rgb(56, 137, 232);
@@ -9,11 +9,15 @@ $accent-color-roadie: rgb(114, 29, 67);
 $accent-color-brother: rgb(187, 124, 169);
 $accent-color-personal: rgb(108, 43, 161);
 
+html {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
 body {
   padding: 0px;
   margin: 0px;
   width: 100%;
-  height: 100%;
   overflow-x: hidden;
   position: absolute;
   background-position: center no-repeat;
@@ -26,6 +30,8 @@ body {
   margin: 0px;
   position: absolute;
   box-sizing: border-box;
+  position: flex;
+  justify-content: center;
 }
 
 .logo {
@@ -34,6 +40,7 @@ body {
   padding-left: 18px;
   top: 0px;
   left: 0px;
+  cursor: pointer;
 
   a {
     text-decoration: none;
@@ -79,12 +86,12 @@ body {
 .darkMenu {
   .bracketButton {
     img {
-      content: url("../../images/brackets-white.png");
+      content: url('../../images/brackets-white.png');
     }
   }
   .musicNoteButton {
     img {
-      content: url("../../images/music-note-white.png");
+      content: url('../../images/music-note-white.png');
     }
   }
 
@@ -122,13 +129,11 @@ body {
 
     a {
       width: 100%;
-      color: $primary-color;
       font-family: Helvetica Neue Medium;
       font-size: 20px;
       margin: 0px;
       padding: 12px;
       text-decoration: none;
-      display: block;
       display: flex;
       justify-content: center;
     }
@@ -168,6 +173,16 @@ body {
     padding: 0px 14px 4px 14px;
   }
 }
+
+.black-text {
+  color: $primary-color;
+}
+
+.white-text {
+  color: white;
+}
+
+
 
 .menuIcon {
   padding: 0px;
@@ -234,7 +249,7 @@ body {
 }
 
 .contentContainer {
-  margin: 2em;
+  margin: 2em 2em 0em 2em;
   display: flex;
   flex-direction: column;
 }
@@ -289,6 +304,7 @@ body {
 .appStoreContainer {
   display: flex;
   flex-flow: column;
+  margin: 2em 0em;
   align-items: center;
 
   .appIcon {
@@ -298,7 +314,7 @@ body {
   a {
     img {
       width: 140px;
-      margin: 2em 0em 0em 0em;
+      margin: 2em 0em;
     }
   }
 }
@@ -317,17 +333,17 @@ body {
     font-family: Helvetica Neue Light;
     font-size: 20px;
     color: white;
+    margin-bottom: 0px;
   }
 
   img {
-	  width: 80%;
-	  margin: 80px 0px 60px 0px;
+    width: 80%;
+    margin: 80px 0px 60px 0px;
   }
 }
 
-
 .eventsContainer {
-  margin: 0em 14em;
+  margin: 0em 10em;
   padding: 0em;
   display: flex;
   align-items: center;
@@ -348,25 +364,23 @@ body {
   }
 
   img {
-    width: 80%;
+    width: 100%;
     margin: 8px 0px 100px 0px;
+    max-width: 1000px;
   }
 }
 
-
-
 .dark {
-  margin: 2em 0em 0em 0em;
-
-  padding: 0.3em 0px;
+  margin: 0px;
+  padding: 0px;
   background-color: black;
 
   .subtitle {
-    margin: 1.2em 12vw 2em 3em;
+    margin: 1em 12vw 2em 3em;
     // margin: 1em 12vw 1em 10em;
     h1 {
       color: white;
-      padding: 0px;
+      padding: 1em 0px 0px 0px;
     }
     hr {
       border: 1px solid white;
@@ -411,8 +425,15 @@ footer {
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 
+  .mac-image {
+    width: 50vw;
+  }
+
+  .iphone-image {
+    width: 10vw;
+  }
   img {
     margin: 0em 1.2em;
   }
@@ -430,14 +451,45 @@ ul {
 }
 
 .bioPics {
-  padding: 12px;
-  margin: 0px;
   display: flex;
+  width: 100%;
+  margin: 0em;
+  padding: 0px;
   justify-content: center;
+  align-content: center;
+
   img {
-    margin: 0px 12px;
-    max-height: 300px;
-    height: auto;
+    height: 100%;
     border: 3px solid black;
+    height: 20vw;
+    margin: 0px 1em;
   }
 }
+.menu-hamburger {
+  display: none;
+  position: absolute;
+  z-index: 10;
+
+  top: 72px;
+  right: 40px;
+  .hamburgerButton {
+    img {
+      width: 34px;
+      height: auto;
+    }
+  }
+}
+
+.dropdown-mobile {
+  display: none;
+  a {
+    color: white;
+  }
+  a:hover {
+    color: $accent-color-brother;
+  }
+}
+
+@import 'fonts';
+@import 'medium';
+@import 'small';

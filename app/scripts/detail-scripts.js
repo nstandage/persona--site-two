@@ -1,6 +1,5 @@
 // init controller
 var controller = new ScrollMagic.Controller();
-
 // create a scene
 var contactScene = new ScrollMagic.Scene({
   triggerElement: ".dark",
@@ -15,8 +14,17 @@ var menuScene = new ScrollMagic.Scene({
   triggerHook: 0.1,
   reverse: true
 })
-  .on("enter", darkMenuEnter)
   .on("leave", darkMenuLeave)
+  .on("enter", darkMenuEnter)
+  .addTo(controller);
+
+var hamburgerScene = new ScrollMagic.Scene({
+  triggerElement: ".dark",
+  triggerHook: 0.1,
+  reverse: true
+})
+  .on("leave", darkHamburgerLeave)
+  .on("enter", darkHamburgerEnter)
   .addTo(controller);
 
 var logoScene = new ScrollMagic.Scene({
@@ -46,3 +54,51 @@ function darkMenuLeave() {
   document.getElementById("noteImg").src = "../images/music-note-black.png";
   document.getElementById("bracketImg").src = "../images/brackets-black.png";
 }
+
+function darkHamburgerLeave() {
+
+	document.getElementById("hamburgerMenu").src = "../images/hamburger-icon-black.png";
+
+	var menuItems = document.getElementsByClassName("black-text");
+
+	
+	for (var i = 0; i < menuItems.length; i++) {
+
+		menuItems[i].classList.remove("white-text");
+
+
+
+	}
+}
+
+function darkHamburgerEnter() {
+
+	document.getElementById("hamburgerMenu").src = "../images/hamburger-icon-white.png";
+	
+	var menuItems = document.getElementsByClassName("black-text");
+
+	console.log(typeof menuItems);
+	
+	console.log(menuItems.length);
+
+	for (var i = 0; i < menuItems.length; i++) {
+
+		menuItems[i].classList.add("white-text");
+
+
+
+	}
+	
+
+
+
+
+}
+
+document.getElementById("menu-hamburger").onclick = function() {
+  document.getElementById("dropdown-mobile").style.display = "flex";
+};
+
+document.getElementById("dropdown-mobile").onclick = function() {
+  document.getElementById("dropdown-mobile").style.display = "none";
+};
