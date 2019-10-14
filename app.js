@@ -41,3 +41,33 @@ app.get('/fat-cats', (req, res) => {
 app.get('/brother', (req, res) => {
         res.sendFile(brother);
 });
+
+
+
+
+
+//EMAIL STUFF
+
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+ns_email = 'developer@nathanstandage.com';
+first_name = '';
+last_name = '';
+email = '';
+subject = '';
+body = '';
+
+
+
+
+const msg = {
+  to: ns_email,
+  from: email,
+  subject: subject + ' FROM: ' first_name + ' ' + last_name,
+  text: body
+};
+sgMail.send(msg);
+
+
+

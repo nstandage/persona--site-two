@@ -23,3 +23,67 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
+
+
+//EMAIL STUFF
+
+function contactClicked() {
+
+	
+
+
+
+
+
+
+
+}
+
+
+
+function validateEmail(emailAddress) {
+
+  let regularExpression = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum|edu)\b/;
+
+  if (regularExpression.test(emailAddress) == true) {
+    return true;
+  } else {
+    return false;
+  }
+
+}
+
+
+function validateText(text) {
+  if (text.length > 3 && text.length < 100) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function validateBody(body) {
+
+	if (body.length > 2 && body.length < 15000) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

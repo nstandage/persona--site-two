@@ -17,3 +17,4 @@ package-lock.json
 
 copy.md
 gulpfile.js
+sendgrid.env
