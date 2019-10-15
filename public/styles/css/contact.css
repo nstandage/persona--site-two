@@ -51,8 +51,8 @@
 .contactError {
   font-family: Helvetica Neue Medium;
   font-size: 16px;
-  color: red;
-  display: none; }
+  color: darkgrey;
+  }
 
 .contactTitle {
   font-size: 50px;

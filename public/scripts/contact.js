@@ -35,7 +35,6 @@ var error = document.getElementById("contactError");
 
 	error.value = '';
 
-	console.log("Inside Contact Clicked");
 
 	var name = document.getElementById("contact_name").value;
 	var email = document.getElementById("contact_email").value;
@@ -43,7 +42,6 @@ var error = document.getElementById("contactError");
 	var body = document.getElementById("contact_body").value;
 
 
-	//console.log(name, email, subject, name, body);
 
 	var error = false;
 
@@ -65,27 +63,39 @@ var error = document.getElementById("contactError");
 
 
 	if (error == false) {
-		console.log("TEST 1");
 
-		var data = {
+		var emailData = {
 			name: name,
 			email: email,
 			subject: subject,
 			body: body
 		}
 
-		fetch('/api', data)
+		var options = {
+			method: "POST",
+			headers: {
+
+      			"Content-Type": "application/json"
+
+			},
+			body: JSON.stringify(emailData)
+
+
+
+		};
+
+		fetch('/api', options)
 			.then( response => { 
+				return response.json();
+			}).then(content => {
 
-				error.value = response.status;
+				error.value = content.status;
 
-			})
-
+			});
 
 	}
 
 }
-
 
 function validateEmail(emailAddress) {
 
