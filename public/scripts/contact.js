@@ -1,3 +1,8 @@
+
+
+
+
+
 // Get the modal
 var modal = document.getElementById("contactPopup");
 
@@ -31,9 +36,8 @@ window.onclick = function(event) {
 //EMAIL STUFF
 
 function contactClicked() {
-var error = document.getElementById("contactError");
-
-	error.value = '';
+var errorMessage = document.getElementById("contactError");
+	errorMessage.textContent = '';
 
 
 	var name = document.getElementById("contact_name").value;
@@ -47,17 +51,17 @@ var error = document.getElementById("contactError");
 
 	if ((validateText(name) == false) || (validateText(subject) == false)) {
 		error = true;
-		error.value = "Make sure fields are valid."
+		errorMessage.textContent = "Make sure fields are valid."
 	}
 	
 	if (validateBody(body) == false) {
 		error = true;
-		error.value = "Make sure message field isn't empty."
+		errorMessage.textContent = "Make sure message field isn't empty."
 	}
 
 	if (validateEmail(email) == false) {
 		error = true;
-		error.value = "Make sure email is valid."
+		errorMessage.textContent = "Make sure email is valid."
 	}
 
 
@@ -89,7 +93,7 @@ var error = document.getElementById("contactError");
 				return response.json();
 			}).then(content => {
 
-				error.value = content.status;
+				errorMessage.textContent = content.status;
 
 			});
 
