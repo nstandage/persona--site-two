@@ -3,6 +3,9 @@ const pennyWise = path + 'penny-wise.html';
 const testPrep = path + 'test-prep.html';
 const fatCats = path + 'fat-cats.html';
 const brother = path + 'brother.html';
+const ns_email = 'developer@nathanstandage.com';
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 
 app.use(express.static(path));
@@ -48,26 +51,28 @@ app.get('/brother', (req, res) => {
 
 //EMAIL STUFF
 
-const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
-ns_email = 'developer@nathanstandage.com';
-first_name = '';
-last_name = '';
-email = '';
-subject = '';
-body = '';
 
 
 
+app.post('/api', (request, response) => {
+
+	console.log("test 0");
 
 const msg = {
   to: ns_email,
-  from: email,
-  subject: subject + ' FROM: ' first_name + ' ' + last_name,
-  text: body
+  from: request.email,
+  subject: request.subject + ' FROM: ' + request.name,
+  text: request.body
 };
 sgMail.send(msg);
+
+  response.json({
+    status: "Success!"
+  });
+
+});
+
+
 
 
 

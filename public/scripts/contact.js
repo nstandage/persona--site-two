@@ -31,17 +31,60 @@ window.onclick = function(event) {
 //EMAIL STUFF
 
 function contactClicked() {
+var error = document.getElementById("contactError");
 
+	error.value = '';
+
+	console.log("Inside Contact Clicked");
+
+	var name = document.getElementById("contact_name").value;
+	var email = document.getElementById("contact_email").value;
+	var subject = document.getElementById("contact_subject").value;
+	var body = document.getElementById("contact_body").value;
+
+
+	//console.log(name, email, subject, name, body);
+
+	var error = false;
+
+	if ((validateText(name) == false) || (validateText(subject) == false)) {
+		error = true;
+		error.value = "Make sure fields are valid."
+	}
 	
+	if (validateBody(body) == false) {
+		error = true;
+		error.value = "Make sure message field isn't empty."
+	}
+
+	if (validateEmail(email) == false) {
+		error = true;
+		error.value = "Make sure email is valid."
+	}
 
 
 
+	if (error == false) {
+		console.log("TEST 1");
+
+		var data = {
+			name: name,
+			email: email,
+			subject: subject,
+			body: body
+		}
+
+		fetch('/api', data)
+			.then( response => { 
+
+				error.value = response.status;
+
+			})
 
 
-
+	}
 
 }
-
 
 
 function validateEmail(emailAddress) {

@@ -48,6 +48,12 @@
   animation-delay: 0.5s;
   overflow: auto; }
 
+.contactError {
+  font-family: Helvetica Neue Medium;
+  font-size: 16px;
+  color: red;
+  display: none; }
+
 .contactTitle {
   font-size: 50px;
   margin: 12px 0px;
