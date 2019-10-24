@@ -84,8 +84,6 @@ var errorMessage = document.getElementById("contactError");
 			},
 			body: JSON.stringify(emailData)
 
-
-
 		};
 
 		fetch('/api', options)

@@ -1,20 +1,13 @@
 
 require("dotenv").config();
 
-
-const express = require('express')
-const fs = require('fs')
-const https = require('https')
+const express = require('express');
+const fs = require('fs');
+const https = require('https');
 const http = require('http');
-const app = express()
-const port-http = process.env.PORT_HTTP || 80;
-const port-https = process.env.PORT_HTTPS || 443
-
-
-
-
-
-
+const app = express();
+const port_http = process.env.PORT_HTTP || 80;
+const port_https = process.env.PORT_HTTPS || 443;
 const path = "/root/personal-site-two/public/";
 const home = path + 'index.html';
 const myWork = path + 'my-work.html';
@@ -24,8 +17,10 @@ const fatCats = path + 'fat-cats.html';
 const brother = path + 'brother.html';
 const ns_email = 'developer@nathanstandage.com';
 const sgMail = require('@sendgrid/mail');
+
 var bodyParser = require('body-parser')
-sgMail.setApiKey(process.env.EMAIL_API_KEY);
+
+sgMail.setApiKey(`${process.env.EMAIL_API_KEY}`);
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -50,17 +45,23 @@ const credentials = {
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
 
-httpServer.listen(port-http, () => {
-	console.log(`HTTP Server running on port ${port-http}`);
+httpServer.listen(port_http, () => {
+	console.log(`HTTP Server running on port ${port_http}`);
 });
 
-httpsServer.listen(port-https, () => {
-	console.log(`HTTPS Server running on port ${port-https}`);
+
+
+httpsServer.listen(port_https, () => {
+	console.log(`HTTPS Server running on port ${port_https}`);
 });
 
-app.use((req, res) => {
-	res.send('Hello there !');
-});
+//app.use(function(request, response){
+  //if(!request.secure){
+    //response.redirect("https://" + request.headers.host + request.url);
+  //}
+//});
+
+
 
 
 app.get('/', (req, res) => {
@@ -92,6 +93,7 @@ app.get('/fat-cats', (req, res) => {
 
 
 app.get('/brother', (req, res) => {
+	console.log("brother.");
         res.sendFile(brother);
 });
 
@@ -100,8 +102,6 @@ app.get('/brother', (req, res) => {
 
 
 //EMAIL STUFF
-
-
 
 
 app.post('/api', (request, response) => {
@@ -124,7 +124,6 @@ const msg = {
 sgMail.send(msg)
 	.then( response => {
 		
-//		console.log(response);
 
 	});
 
