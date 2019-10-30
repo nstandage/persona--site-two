@@ -113,7 +113,7 @@ function validateEmail(emailAddress) {
 
 
 function validateText(text) {
-  if (text.length > 3 && text.length < 100) {
+  if (text.length > 0 && text.length < 150) {
     return true;
   } else {
     return false;
